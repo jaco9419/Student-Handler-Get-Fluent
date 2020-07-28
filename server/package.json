@@ -1,0 +1,29 @@
+{
+  "name": "student-handler-get-fluent",
+  "version": "1.0.0",
+  "description": "This is a first approach on how to use CRUD for students in Get Fluent. It uses Node.js, Express and MySQL for the server.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaco9419/Student-Handler-Get-Fluent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaco9419/Student-Handler-Get-Fluent/issues"
+  },
+  "homepage": "https://github.com/jaco9419/Student-Handler-Get-Fluent#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
