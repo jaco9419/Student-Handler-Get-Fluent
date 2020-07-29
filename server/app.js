@@ -12,12 +12,19 @@ app.use(express.json()); //to send the response in json format
 app.use(express.urlencoded({ extended: false })); //The value will be string or array
 
 //create
-app.post("/insert", (req, res, next) => {});
+app.post("/insert", (request, response, next) => {
+  console.log(request.body);
+});
+
 //read
-app.get("/getAll", (req, res, next) => {
-  res.json({
-    success: true,
-  });
+app.get("/getAll", (request, response, next) => {
+  const db = dbService.getDbServiceInstance();
+
+  const result = db.getAllData();
+
+  result
+    .then((data) => response.json({ data: data }))
+    .catch((err) => console.log(err));
 });
 //update
 
